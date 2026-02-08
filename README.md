@@ -8,3 +8,9 @@ The official implementation of DSformer: A Dual-Stream Transformer for Crystal R
 
 # Results
 ![image](https://github.com/ablappno1/DSformer/blob/main/pics/DSformer%20Result.PNG)
+
+# Environment Setup
+Use Command below:
+'''
+conda env create -f environment.yml
+'''
