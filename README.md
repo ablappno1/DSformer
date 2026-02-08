@@ -23,6 +23,20 @@ python download_megnet_elastic.py
 python downlad_jarvis.py
 ```
 
+# Targets
+The following are different target sets and their corresponding targets:
+| target_set  | targets |
+| ------------- | ------------- |
+| jarvis__megnet | e_form  |
+| jarvis__megnet  | bandgap  |
+| jarvis__megnet-bulk  | bulk_modulus  |
+| jarvis__megnet-shear  | shear_modulus  |
+| jarvis__dft_3d_2021  | formation_energy  |
+| jarvis__dft_3d_2021  | total_energy  |
+| jarvis__dft_3d_2021  | opt_bandgap  |
+| jarvis__dft_3d_2021-mbj_bandgap | mbj_bandgap  |
+| jarvis__dft_3d_2021-ehull | 	ehull  |
+
 # Training
 You can start training using the following commands:
 ```
@@ -34,7 +48,7 @@ CUDA_VISIBLE_DEVICES=0 python train.py -p latticeformer/default.json \
     --num_layers 4 \
     --value_pe_dist_real 64 \
     --target_set jarvis__megnet \
-    --targets formation_energy \
+    --targets e_form \
     --batch_size 128 \
     --lr 0.0005 \
     --model_dim 128 \
