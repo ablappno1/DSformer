@@ -60,3 +60,6 @@ You can test the model using the following commands:
 ```
 . demo.sh
 ```
+
+# Acknowledgement
+This repository was inspired by Crystalformer[Crystalformer](https://omron-sinicx.github.io/crystalformer/). Thanks to Crystalformer for their excellent work.
