@@ -13,7 +13,7 @@ class Periodic_Atomic_Encoding(nn.Module):
     "PAE"
     def __init__(self, emb_input_dim, emb_output_dim, per_ratio=0.15, num_freqs=16):
         super().__init__()
-        assert 0 < per_ratio < 0.5, "per_ratio must be between 0 and 0.5"
+        assert 0 < per_ratio < 0.5, "0 < per_ratio < 0.5"
 
         self.per_ratio = per_ratio
         per_output_dim = int(emb_output_dim * self.per_ratio)
